@@ -1,0 +1,12 @@
+<form method="POST" action="/creatures/<%=creatureID%>/?_method=PUT">
+    <label for="editCreatureTypeInput">Edit Creature Type:</label>
+    <input id="editCreatureTypeInput" type="text" name="type" value="<%=creature.type%>">
+    <br>
+    <br>
+    <label for="editCreatureImgInput">Edit Creature Img URL:</label>
+    <input id="editCreatureImgInput" type="text" name="img_url" value="<%=creature.img_url%>">
+
+    <input type="submit">
+</form>
+<br>
+<a href="/creatures">Return to Creatures List</a>

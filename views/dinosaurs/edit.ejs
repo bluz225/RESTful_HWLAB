@@ -1,0 +1,13 @@
+<form method="POST" action="/dinosaurs/<%=dinoID%>/?_method=PUT">
+    <label for="editNameInput"></label>
+    <input id="editNameInput" type="text" name="name" value="<%=dino.name%>">
+
+    <label for="editTypeInput"></label>
+    <input id="editTypeInput" type="text" name="type" value="<%=dino.type%>">
+
+    <input type="submit">
+</form>
+<br>
+<a href="/dinosaurs">Return to Dinosaur List</a>
+
+

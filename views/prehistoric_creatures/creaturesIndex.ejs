@@ -1,0 +1,24 @@
+ <% myCreatures.forEach(function(creature, index){%>
+    <li>
+        <!-- show link for creature -->
+        <a href="/creatures/<%=index%>"><%=creature.type%></a>
+
+        <!-- edit link -->
+        <a href="/creatures/edit/<%=index%>">Edit</a>
+
+        <!-- delete button -->
+        <form method="POST" action="/creatures/<%=index%>/?_method=DELETE">
+            <button type="submit">Delete</button>
+        </form>
+
+    </li>
+<%})%>
+
+<br>
+<br>
+<li><a href="/creatures/new">Add New Creature</a></li>
+<li><a href="/">Return Home</a></li>
+
+
+  
+ 
